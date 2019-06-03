@@ -2,26 +2,32 @@
 <html>
     <head>
         <title>Cognitive Search</title>
-        <link rel="shortcut icon" href=".\static\img\favicon.ico">
+        <link rel="shortcut icon" href="static\img\favicon.ico">
         <meta name="author" content="Aaron Hurst">
-        <link type="text/css" rel="stylesheet" href=".\static\styles\common.css"/>
+        <link type="text/css" rel="stylesheet" href="static\styles\common.css"/>
     </head>
 
     <body>
-        <br />
-        <img src=".\static\img\watson.jpg" alt="Watson logo" style="height:128px"/>
-        
-        <h1>
-            Cognitive Search
-        </h1>
-        <p>
-            This application uses Watson Discovery Service. Please enter your search query in natural language below.
-        </p>
+        <div id="content-wrapper">
+            <div id="main">
+                <img src="static\img\watson.jpg" alt="Watson logo" style="height:128px"/>
+                
+                <h1>Cognitive Search</h1>
+                
+                <form id="search-container" action="/results" method="POST">
+                    <p>Ask <b>Watson</b> a question in natural language:</p>
+                    <div id="search-box">
+                        <input type="text" placeholder="Enter your query here..." name="natural_language_query" />
+                        <input type="submit" value="search" />
+                    </div>
+                    <!-- <a href="/results"><img class="search-icon" src="static\img\search-icon.png"></a> -->
+                </form>
+            </div>
+        </div>
 
-        <form action="/results" method="POST">
-            <input type="search" name="natural_language_query" maxlength="256"/>
-            <input type="submit" value="search">
-        </form>
+        <div id="footer">
+            Copyright &copy; Aaron Hurst 2019
+        </div>
     </body>
 
 </html>
