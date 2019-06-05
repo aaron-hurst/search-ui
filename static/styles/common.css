@@ -55,25 +55,3 @@ body {
     border: none;
     color: transparent;
 }
-
-
-/* input[type="text"].search-box {
-    margin: 0 auto;
-    width: 60%;
-    height: 40px;
-    padding: 0 20px;
-    font-size: 1rem;
-    border: 1px solid #D0CFCE;
-    outline: none;
-} */
-
-/* input[type="submit"].search-icon {
-    background-image: url("search-icon.png");
-    background-repeat: no-repeat;
-    position: relative;
-    float: right;
-    width: 75px;
-    height: 75px;
-    top: -62px;
-    right: -45px;
-/* }

@@ -2,14 +2,19 @@
 <html>
     <head>
         <title>Cognitive Search</title>
-        <link rel="shortcut icon" href=".\static\img\favicon.ico">
+        <link rel="shortcut icon" href="static\img\favicon.ico">
         <meta name="author" content="Aaron Hurst">
-        <link type="text/css" rel="stylesheet" href=".\static\styles\common.css"/>
+        <link type="text/css" rel="stylesheet" href="static\styles\common.css"/>
     </head>
 
     <body>
         <h1>Results</h1>
-        <p>Placeholder for results</p>
+        <p>The results from your query are listed below (limited to 10 documents).</p>
+
+        {% for result in results %}
+            <h4> {{ result['title'] }} </h4>
+            <p>  {{ result['text'] }} </p>
+        {% endfor %}
     </body>
 
 </html>
