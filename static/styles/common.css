@@ -3,16 +3,12 @@ body {
     color: black;
 }
 
+h1 {
+    margin-top: 0;
+}
+
 #content-wrapper {
     min-height: calc(100vh - 50px);
-  }
-
-#main {
-    background-color: white;
-    text-align: center;
-    margin: 0 auto;
-    width: 900px;
-    padding: 30px;
 }
 
 #footer {
@@ -22,36 +18,4 @@ body {
     clear: both;
     position: relative;
     height: 30px;
-}
-
-#search-container {
-    width: 100%;
-    margin: 0 auto;
-    font-size: 80%;
-}
-
-#search-box {
-    padding: 10px;
-}
-
-#search-box input[type="text"] {
-    margin: 0 auto;
-    width: 80%;
-    height: 30px;
-    padding: 0px 10px;
-    border: 1.5px solid #D0CFCE;
-    outline: none;
-    border-radius: 5px;
-}
-
-#search-box input[type="text"]:focus {
-    border: 1.5px solid #5886F8;
-}
-
-#search-box input[type="submit"] {
-    background: url("../img/search-icon.png") no-repeat center center;
-    width: 30px;
-    height: 30px;
-    border: none;
-    color: transparent;
 }
